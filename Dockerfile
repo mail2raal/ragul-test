@@ -4,4 +4,4 @@ COPY test.html .
 WORKDIR /etc/nginx/conf.d/
 COPY default.conf .
 EXPOSE 8081
-CMD ["sh","-c","nginx --version && nginx -s reload"]
+CMD ["sh","-c","nginx -v && nginx -s reload"]
